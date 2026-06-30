@@ -23,11 +23,6 @@ import {
   Zap,
 } from 'lucide-react'
 
-// Where the "Нэвтрэх" / "Системд нэвтрэх" buttons point. This marketing
-// site is static (Vercel) and has no /login of its own — login lives in
-// the product app. Override per-deployment via NEXT_PUBLIC_LOGIN_URL.
-const LOGIN_URL = process.env.NEXT_PUBLIC_LOGIN_URL || 'https://uboil.flux.mn/login'
-
 export default function Home() {
   return <LandingPage />
 }
@@ -128,8 +123,8 @@ function LandingPage() {
               <a href="#contact" className="text-sm text-slate-600 hover:text-slate-900 transition">Холбоо барих</a>
             </div>
             <div className="flex items-center gap-3">
-              <a href={LOGIN_URL} className="hidden sm:block text-sm font-medium text-slate-700 hover:text-slate-900">
-                Нэвтрэх
+              <a href="#contact" className="hidden sm:block text-sm font-medium text-slate-700 hover:text-slate-900">
+                Холбоо барих
               </a>
               <a
                 href="#contact"
@@ -169,10 +164,10 @@ function LandingPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
-                  href={LOGIN_URL}
+                  href="#features"
                   className="inline-flex items-center justify-center gap-2 text-slate-700 font-medium px-6 py-3 rounded-lg border border-slate-200 hover:bg-slate-50 transition"
                 >
-                  Системд нэвтрэх
+                  Боломжуудыг үзэх
                 </a>
               </div>
 
@@ -391,7 +386,7 @@ function LandingPage() {
                 <li><a href="#about" className="hover:text-slate-900">Бүтээгдэхүүн</a></li>
                 <li><a href="#features" className="hover:text-slate-900">Боломжууд</a></li>
                 <li><a href="#architecture" className="hover:text-slate-900">Архитектур</a></li>
-                <li><a href={LOGIN_URL} className="hover:text-slate-900">Нэвтрэх</a></li>
+                <li><a href="#contact" className="hover:text-slate-900">Холбоо барих</a></li>
               </ul>
             </div>
             <div>

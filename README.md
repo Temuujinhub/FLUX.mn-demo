@@ -36,9 +36,11 @@ git push -u origin main
 ## Vercel deploy (Шат 2)
 1. https://vercel.com/temuujinhubs-projects → **Add New → Project** → `FLUX.mn-demo` repo-г импортло.
 2. Framework: **Next.js** (auto). Root: `/` (repo үндэс). Build: `next build` (vercel.json-д бий).
-3. (Сонголт) Environment variable: `NEXT_PUBLIC_LOGIN_URL = https://uboil.flux.mn/login`
-   — "Нэвтрэх" товчны заагч. Тохируулаагүй бол default нь `https://uboil.flux.mn/login`.
-4. Deploy → `flux-mn-demo.vercel.app` гарч ирнэ.
+3. Deploy → `flux-mn-demo.vercel.app` гарч ирнэ.
+
+> Энэ сайт нь **зөвхөн танилцуулга** — нэвтрэх / dashboard АГУУЛААГҮЙ (backend шаардахгүй static).
+> Бүх товч `#contact` (Демо авах / Холбоо барих) руу чиглэнэ. Бүтэн ажиллах demo нь тусдаа
+> `demo.flux.mn` (droplet) дээр байрлана.
 
 ## flux.mn домэйныг Vercel руу заах (Шат 2)
 Vercel төсөл → **Settings → Domains → Add `flux.mn`** (болон `www.flux.mn`). Vercel заавар өгнө:
