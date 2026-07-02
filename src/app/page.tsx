@@ -127,10 +127,10 @@ function LandingPage() {
                 Холбоо барих
               </a>
               <a
-                href="#contact"
+                href="https://demo.flux.mn/login"
                 className="text-sm font-medium bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
               >
-                Демо авах
+                Демо систем
               </a>
             </div>
           </div>
@@ -157,10 +157,10 @@ function LandingPage() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                 <a
-                  href="#contact"
+                  href="https://demo.flux.mn/login"
                   className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-sm"
                 >
-                  Демо авах
+                  Демо систем үзэх
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
@@ -386,6 +386,7 @@ function LandingPage() {
                 <li><a href="#about" className="hover:text-slate-900">Бүтээгдэхүүн</a></li>
                 <li><a href="#features" className="hover:text-slate-900">Боломжууд</a></li>
                 <li><a href="#architecture" className="hover:text-slate-900">Архитектур</a></li>
+                <li><a href="https://demo.flux.mn/login" className="hover:text-slate-900">Демо систем</a></li>
                 <li><a href="#contact" className="hover:text-slate-900">Холбоо барих</a></li>
               </ul>
             </div>

@@ -5,6 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://flux.mn'),
   title: 'Flux Monitor — Шатахуун түгээх станцын хяналтын систем',
   description:
     'Үүлэн технологид суурилсан шатахуун түгээх станцын алсын удирдлага, хяналтын систем. Бодит цагийн мониторинг, борлуулалтын тайлан, үнийн удирдлага.',
