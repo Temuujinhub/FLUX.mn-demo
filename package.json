@@ -2,7 +2,7 @@
   "name": "flux-mn-demo",
   "version": "1.0.0",
   "private": true,
-  "description": "Flux Monitor marketing / demo landing site (demo.flux.mn). Static Next.js app, deployed on Vercel. Contains NO product code or backend.",
+  "description": "Flux Monitor marketing / demo landing site (flux.mn). Static Next.js app, deployed on Vercel. Contains NO product code or backend.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -1,19 +1,21 @@
-# Flux Monitor — Marketing / Demo сайт (demo.flux.mn)
+# Flux Monitor — Marketing landing сайт (flux.mn)
 
 Энэ бол **зөвхөн marketing landing хуудас** — flux.mn бүтээгдэхүүний танилцуулга.
 Backend, бүтээгдэхүүний код, нэвтрэх, өгөгдөл **АГУУЛААГҮЙ**. Vercel дээр static-аар
-байрлаж, `demo.flux.mn` домэйноор нээгдэнэ.
+байрлаж, `flux.mn` домэйноор нээгдэнэ. "Демо систем" товчнууд нь
+`https://demo.flux.mn/login` руу шууд үсэрнэ.
 
 ## Орчнуудын тусгаарлалт
 
-| Орчин | Домэйн | Эх сурвалж |
-|-------|--------|-----------|
-| Marketing / landing | **demo.flux.mn** | Энэ repo (Vercel) |
-| Staging апп | staging.flux.mn | `Temuujinhub/flux.mn`, `main` branch (droplet) |
-| Production апп | uboil.flux.mn | `Temuujinhub/flux.mn`, production branch |
+| Орчин | Домэйн | Хост | Эх сурвалж |
+|-------|--------|------|-----------|
+| Marketing / landing | **flux.mn** | Vercel | Энэ repo |
+| Demo апп | demo.flux.mn | DigitalOcean droplet (157.230.40.98) | `Temuujinhub/flux.mn`, `main` branch |
+| Production апп | uboil.flux.mn | DigitalOcean (68.183.226.111) | `Temuujinhub/flux.mn`, production branch |
 
-Landing хуудас нь staging / production-оос бүрэн тусдаа тул зочдын траффик,
-аналитик, үнийн өгөгдөл бүтээгдэхүүний орчинтой холилдохгүй.
+Landing нь demo / production-оос бүрэн тусдаа хост дээр байрладаг тул зочдын
+траффик, аналитик, үнийн өгөгдөл бүтээгдэхүүний орчинтой холилдохгүй.
+demo.flux.mn дээр landing **байхгүй** — root нь шууд `/login` руу үсэрнэ.
 
 ## Бүтэц
 ```
@@ -34,19 +36,12 @@ npm run build    # production build (static)
 ```
 
 ## Vercel deploy
-1. https://vercel.com/temuujinhubs-projects → **Add New → Project** → `FLUX.mn-demo` repo-г импортло.
-2. Framework: **Next.js** (auto). Root: `/` (repo үндэс). Build: `next build` (vercel.json-д бий).
-3. Deploy → `flux-mn-demo.vercel.app` гарч ирнэ.
+Repo нь Vercel-ийн `flux-mn-demo` төсөлтэй холбогдсон — `main` руу merge хийхэд
+автоматаар deploy хийгдэнэ, PR бүрт preview URL гарна. `flux.mn` / `www.flux.mn`
+домэйн Vercel дээр аль хэдийн тохируулагдсан.
 
-> Энэ сайт нь **зөвхөн танилцуулга** — нэвтрэх / dashboard АГУУЛААГҮЙ (backend шаардахгүй static).
-> Бүх товч `#contact` (Демо авах / Холбоо барих) руу чиглэнэ.
-
-## demo.flux.mn домэйныг Vercel руу заах
-Vercel төсөл → **Settings → Domains → Add `demo.flux.mn`**. Дараа нь DNS дээрээ:
-- `demo.flux.mn`: CNAME → `cname.vercel-dns.com`.
-
-`staging.flux.mn` нь Vercel-д хамаарахгүй — тэр нь `Temuujinhub/flux.mn` repo-гийн
-`main` branch deploy хийдэг droplet (157.230.40.98) руу A бичлэгээр заана.
+> Энэ сайт нь **зөвхөн танилцуулга** — нэвтрэх / dashboard АГУУЛААГҮЙ (backend
+> шаардахгүй static). Login хэрэгтэй бол demo.flux.mn (droplet) руу үсэрнэ.
 
 ## Зураг оптимизаци (сонголт)
 `public/1300.jpg` ~2.5MB. Хүсвэл webp болгож багасгаж болно (Vercel автоматаар хувиргаж дамжуулдаг).
